@@ -119,7 +119,7 @@ WSL（Windows Subsystem for Linux，Windows 的 Linux 子系统）
 
 ---
 
-## Wsl & linux 换源 (Ubuntu24.04)
+## Wsl & linux 换源 (Ubuntu24.04)(**请在magic_code.md里面复制)**
 
 ```bash
 sudo tee /etc/apt/sources.list.d/ubuntu.sources <<'EOF'
