@@ -1,41 +1,57 @@
 ---
 marp: true
 math: mathjax
-backgroundImage: url('https://heaticy-1310163554.cos.ap-shanghai.myqcloud.com/markdown/20230518103311.png')
+theme: ShanghaiTech_Tutorial
 paginate: true
-style: |
-  section::after {
-    content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
-  }
+size: 16:9
+header: \ *CS100* *Tutorial 0* *Fall 2025*
+---
+<!-- _class: cover_e -->
+<!-- _header: ![](../themes/bkgd_assets/ShanghaiTech_Logo_RGBA.png) -->
+<!-- _footer: ![](../themes/bkgd_assets/ShanghaiTech_Name_RGBA.png) -->
+<!-- _paginate: "" -->
+# CS100 Recitation 0
+###### Environment Setup
 
-  .columns {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
-  }
+From Chaofan Li 
+@lichf2025@shanghaitech.edu.cn
 
 ---
 
-# CS100 Recitation 0 —— 搭环境
+## Contents
+<!-- _class: trans -->
+<!-- _header: "" -->
+<!-- _footer: "" -->
+<!-- _paginate: "" -->
 
-## From Chaofan Li 
+---
+## Contents
+<!-- _class: toc_a -->
+<!-- _header: "Contents" -->
+<!-- _footer: "" -->
+<!-- _paginate: "" -->
 
-lichf2025@shanghaitech.edu.cn
+- [1. 前置知识: 编辑器、编译器、IDE](#3)
+- [2. 编译器的安装](#11)
+- [3. 终端（命令行，命令提示符）](#23)
+- [4.  Visual Studio Code](#35)
 
+---
+## 1. 前置知识: 编辑器、编译器、IDE
+<!-- _class: trans -->
+<!-- _header: "" -->
+<!-- _footer: "" -->
+<!-- _paginate: "" -->
 
 ---
 
-# 前置知识
-
----
-
-## 编辑器、编译器、IDE
+## 1. 前置知识: 编辑器、编译器、IDE
 
 - 编辑器：任何可以编辑文本的软件，例如记事本、Word、WPS 文字、手机备忘录
 
 ---
 
-## 编辑器、编译器、IDE
+## 1. 前置知识: 编辑器、编译器、IDE
 
 - 编辑器：任何可以编辑文本的软件，例如记事本、Word、WPS 文字、手机备忘录
   - 但我们需要的是**代码编辑器**，尤其是**现代代码编辑器**：
@@ -43,7 +59,7 @@ lichf2025@shanghaitech.edu.cn
 
 ---
 
-## 编辑器、编译器、IDE
+## 1. 前置知识: 编辑器、编译器、IDE
 
 - 编辑器：任何可以编辑文本的软件，例如记事本、Word、WPS 文字、手机备忘录
   - 但我们需要的是**代码编辑器**，尤其是**现代代码编辑器**：
@@ -53,7 +69,7 @@ lichf2025@shanghaitech.edu.cn
 
 ---
 
-## 编辑器、编译器、IDE
+## 1. 前置知识: 编辑器、编译器、IDE
 
 - 编辑器：任何可以编辑文本的软件，例如记事本、Word、WPS 文字、手机备忘录
   - 但我们需要的是**代码编辑器**，尤其是**现代代码编辑器**：
@@ -64,7 +80,7 @@ lichf2025@shanghaitech.edu.cn
   
 ---
 
-## 编辑器、编译器、IDE
+## 1. 前置知识: 编辑器、编译器、IDE
 
 - 代码编辑器：`Visual Studio Code`, `Vim`, `Sublime Text`, ...
 - 编译器：用来将高级语言的代码“翻译”成计算机真正能执行的代码
@@ -75,7 +91,7 @@ lichf2025@shanghaitech.edu.cn
 
 ---
 
-## 编辑器、编译器、IDE
+## 1. 前置知识: 编辑器、编译器、IDE
 
 - 代码编辑器：`Visual Studio Code`, `Vim`, `Sublime Text`, ...
 - 编译器：用来将高级语言的代码“翻译”成计算机真正能执行的代码
@@ -85,13 +101,22 @@ lichf2025@shanghaitech.edu.cn
 
 ---
 
-# 安装编译器
+## 2. 编译器的安装
+<!-- _class: trans -->
+<!-- _header: "" -->
+<!-- _footer: "" -->
+<!-- _paginate: "" -->
+
+---
+
+## 2. 编译器的安装
 
 GCC (MinGW) 和 Clang（可选，Winlibs 自带）
 
 ---
 
-## Linux（以 Ubuntu 为例）
+## 2. 编译器的安装
+#### 2.1. Linux（以 Ubuntu 为例）
 
 - `sudo apt install gcc g++` 或者 `sudo apt install build-essential` 即可安装默认版本的 `gcc` 和 `g++`，在 24.04 默认安装的是 gcc-13。
 
@@ -102,7 +127,8 @@ GCC (MinGW) 和 Clang（可选，Winlibs 自带）
 - 编译器优化更强，更好的错误检查与诊断
 
 ---
-## Windows（WSL）
+## 2. 编译器的安装
+#### 2.2. Windows（WSL）
 
 - 什么是 WSL
 
@@ -112,48 +138,37 @@ WSL（Windows Subsystem for Linux，Windows 的 Linux 子系统）
 换句话说：在 Windows 里，你可以直接打开一个 Linux 终端，运行 apt, bash, gcc, python 等工具，就像真的在 Linux 下一样。
 
 ---
+## 2.2. Windows（WSL）环境配置（推荐）
+<!-- _class: cols-2 -->
+<div class="ldiv">
 
-## Windows（WSL）环境配置（推荐）
 
-![20250915212834](https://heaticy-1310163554.cos.ap-shanghai.myqcloud.com/markdown/20250915212834.png)
+![#c w:500](https://heaticy-1310163554.cos.ap-shanghai.myqcloud.com/markdown/20250915212834.png)
+
+</div>
+<div class="rdiv">
+
+WSL & linux 换源 (Ubuntu24.04)（请在点击[这里](https://github.com/Heaticy/CS100-recitations-fall2025/blob/main/env_setup/magic_code.md) 或者在piazza链接里面复制）
+
+![#c w:500](https://heaticy-1310163554.cos.ap-shanghai.myqcloud.com/markdown/20250918143458.png)
+
+</div>
 
 ---
-
-## Wsl & linux 换源 (Ubuntu24.04)(**请在magic_code.md里面复制)**
+## 2. 编译器的安装
+<!-- _class: bq-red -->
+#### 2.2. Windows（WSL）
+> Wsl & linux 配置gcc环境 
 
 ```bash
-sudo tee /etc/apt/sources.list.d/ubuntu.sources <<'EOF'
-Types: deb
-URIs: https://mirrors.tuna.tsinghua.edu.cn/ubuntu
-Suites: noble noble-updates noble-backports
-Components: main restricted universe multiverse
-Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
-
-# Types: deb-src
-# URIs: https://mirrors.tuna.tsinghua.edu.cn/ubuntu
-# Suites: noble noble-updates noble-backports
-# Components: main restricted universe multiverse
-# Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
-
-Types: deb
-URIs: http://security.ubuntu.com/ubuntu/
-Suites: noble-security
-Components: main restricted universe multiverse
-Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
-EOF
-```
----
-## Wsl & linux 配置gcc环境 
-
-```
 sudo apt update
 sudo apt upgrade
 sudo apt install gcc g++
 ```
 
 ---
-
-## Mac环境配置
+## 2. 编译器的安装
+#### 2.3. Mac环境配置
 
 - 不用配，mac自带clang编译器
 - 用下面的命令检查clang版本即可
@@ -163,114 +178,128 @@ clang --version
 ```
 
 ---
+## 2. 编译器的安装
+#### 2.4. Windows（本地环境）
 
-## Windows（本地环境）
+无法直接安装 `GCC`，我们需要 `MinGW`（**Min**imalist **G**NU for **W**indows）
+- 实际上，我们的是需要 `MinGW-w64`。原始意义上的 `MinGW` 停止维护很久了。
 
-无法直接安装 `GCC`，我们需要 `MinGW`：**Min**imalist **G**NU for **W**indows.
-- 实际上我们需要 `MinGW-w64`。`MinGW` 停止维护很久了。
-
-[Winlibs](https://winlibs.com/) 是个好东西
+[Winlibs](https://winlibs.com/) 是个好东西！
 - 在 **Download** 下选择 **UCRT runtime** 中标有 **(LATEST)** 的那个 release 里的 Win64 Zip archive（建议选带有 LLVM/Clang 的）
 
-#### 我不识字版：
+#### 我不识字：
 
 [GCC 15.2.0 (with POSIX threads) + MinGW-w64 13.0.0 (UCRT) - release 1   (LATEST)](https://github.com/brechtsanders/winlibs_mingw/releases/download/15.2.0posix-13.0.0-ucrt-r1/winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-13.0.0-r1.zip)
 
 ---
-
-## Windows
+## 2. 编译器的安装
+#### 2.4. Windows（本地环境）
 
 解压后将 `mingw64` 这个文件夹放在 C 盘或 D 盘，**路径最好简单一点**，例如 `C:\mingw64` 或者 `D:\mingw64`。
 
 ---
-
-## Windows 环境变量
+## 2. 编译器的安装
+#### 2.4. Windows（本地环境）-Windows 环境变量
 
 按 `Win` 键，输入 `env`，即可搜出这个选项
 
-![](img/env.png)
+![#c w:800](img/env.png)
+
+---
+## 2. 编译器的安装
+#### 2.4. Windows（本地环境）-Windows 环境变量
+
+编辑 `Path`：
+
+![#c w:600](img/env2.png)
 
 ---
 
-## Windows 环境变量
+## 2. 编译器的安装
+<!-- _class: cols-2 -->
+<div class="ldiv">
 
-编辑 `Path`
-
-![](img/env2.png)
-
----
-
-## Windows 环境变量
+#### 2.4. Windows（本地环境）-Windows 环境变量
 
 新建一项，输入 `mingw64\bin` 所在的位置，最好把它移到最上面。
 
----
+</div>
+<div class="rimg">
 
-![](img/env3.png)
-
----
-
-# 终端（命令行，命令提示符）
-
-Terminal / Shell / Command Line / Command Prompt
+![#c](img/env3.png)
+</div>
 
 ---
 
-## Windows PowerShell
+## 3. 终端（命令行，命令提示符）
+<!-- _class: trans -->
+<!-- _header: "" -->
+<!-- _footer: "" -->
+<!-- _paginate: "" -->
+
+---
+
+## 3. 终端（命令行，命令提示符）
+
+终端有很多种，如：
+- Terminal 
+- Shell
+- Command Line 
+- Command Prompt
+- ......
+
+---
+
+## 3. 终端（命令行，命令提示符）
+#### 3.1. Windows PowerShell
 
 按 `Win`+`r` 输入 `powershell`，或者按 `Win` 输入 `powershell` 搜索，打开 Windows PowerShell
 
-![](img/powershell_search.png)
+![#c ](img/powershell_search.png)
 
 ---
+## 3. 终端（命令行，命令提示符）
+#### 3.1. Windows PowerShell
 
-## Windows PowerShell
-
-![](img/powershell.png)
+![#c h:450](img/powershell.png)
 
 ---
-
-## 在终端输入命令
-
+## 3. 终端（命令行，命令提示符）
+#### 3.2. 在终端使用指令
 Windows PowerShell 常见命令（不一定全都掌握，但 `cd` 必须会）：
-
-- `ls` 列出当前工作目录（Current Working Directory, CWD）下的文件
+- `ls`： 列出当前工作目录（Current Working Directory, CWD）下的文件
   - 默认情况下打开 PowerShell，工作目录是`C:\Users\Username`
-- `cd somePath` 将工作目录切换到 `somePath`，可以是相对或绝对路径
-  - `cd ..` 切换到上一级目录
-  - `cd 'D:\Program Files'` 切换到 `D:\Program Files`。加引号是因为有空格
-- `mkdir CS100` 在当前工作目录下创建名为 `CS100` 的文件夹
-- `rmdir CS100` 删除这个文件夹
-- `del file` 删除名为 `file` 的文件
-
-（我差不多只会这些了，因为我平常都用 Linux ...）
+- `cd somePath`： 将工作目录切换到 `somePath`，可以是相对或绝对路径
+  - `cd ..`： 切换到上一级目录
+  - `cd 'D:\Program Files'`： 切换到 `D:\Program Files`。加引号是因为有空格
+- `mkdir CS100`： 在当前工作目录下创建名为 `CS100` 的文件夹
+- `rmdir CS100`： 删除这个文件夹
+- `del file`： 删除名为 `file` 的文件
 
 ---
-
-## 在终端输入命令
-
+## 3. 终端（命令行，命令提示符）
+#### 3.2. 在终端使用指令
 输入 `gcc`，PowerShell 会试图在 `Path` 环境变量所包含的路径中寻找名为 `gcc.exe` 的可执行文件，它实际上位于 `mingw64\bin`
 
 如果编译器的安装及 `Path` 设置正确，应当看到如下输出
 
-![](img/gcc.png)
+![#c h:150](img/gcc.png)
 
 ---
-
-## 在终端输入命令
+## 3. 终端（命令行，命令提示符）
+#### 3.2. 在终端使用指令
 
 要查看编译器的版本：给出 `--version` 参数
 
-![](img/gcc_version.png)
+![#c h:300](img/gcc_version.png)
 
 `gcc` 和 `clang` 是 C 编译器，`g++` 和 `clang++` 是 C++ 编译器
 
 ---
-
-## 编译运行一个 Hello World 程序
+## 3. 终端（命令行，命令提示符）
+#### 3.3. 编译运行一个 Hello World 程序
 
 假设你的 CS100 课程的文件夹位于 `D:\courses\CS100`
-
 - 在 `D:\courses\CS100\tmp` 创建 `hello.c`，用记事本打开，输入如下代码
   
   ```c
@@ -281,6 +310,9 @@ Windows PowerShell 常见命令（不一定全都掌握，但 `cd` 必须会）�
   }
   ```
 
+---
+## 3. 终端（命令行，命令提示符）
+#### 3.3. 编译运行一个 Hello World 程序
 - 打开 PowerShell 并切换到 `D:\courses\CS100\tmp`，输入如下命令
 
   ```
@@ -290,27 +322,26 @@ Windows PowerShell 常见命令（不一定全都掌握，但 `cd` 必须会）�
   将会得到可执行文件 `hello.exe`。该文件名由紧跟在 `-o` 之后的字符串指定。
 
 ---
-
-## 编译运行一个 Hello World 程序
+## 3. 终端（命令行，命令提示符）
+#### 3.3. 编译运行一个 Hello World 程序
 
 在 PowerShell 里输入 `.\hello` 即可运行 `hello.exe`。
 
 - 当然也可以双击运行，但你可能会看到它一闪而过。
 
-![](img/compile_hello.png)
+![#c h:150](img/compile_hello.png)
 
 ---
-
-## 编译运行一个 Hello World 程序
+## 3. 终端（命令行，命令提示符）
+#### 3.3. 编译运行一个 Hello World 程序
 
 也可以用资源管理器打开 `D:\courses\CS100\tmp` 后，在地址栏输入 `powershell`，这时打开的 PowerShell 的工作目录就是这个文件夹。
 
-![](img/open_ps.png)
+![#c](img/open_ps.png)
 
 ---
-
-## 向编译器传递参数
-
+## 3. 终端（命令行，命令提示符）
+#### 3.4. 向编译器传递参数
 ```
 gcc hello.c -o hello.exe
 ```
@@ -326,29 +357,31 @@ gcc hello.c -o hello.exe
 
 ---
 
-# Visual Studio Code
-
-编写、编译、运行 C/C++ 代码
+## 4.  Visual Studio Code
+<!-- _class: trans -->
+<!-- _header: "" -->
+<!-- _footer: "" -->
+<!-- _paginate: "" -->
 
 ---
-
-## VSCode
-
+## 4.  Visual Studio Code
+#### 4.1. What's VSCode?
 VSCode 是一个现代的**代码编辑器**
 - 它不能帮你**编译**程序
   - “为什么我的代码在 VSCode 上跑出来是这样...？”
-- 但它有大量好用的插件，可以帮你一键调用编译器、方便地调试代码、版本管理、在远程/容器里开发，甚至上QQ、逛知乎、听网易云、炒股......
+- 但它有大量好用的插件，可以帮你一键调用编译器、方便地调试代码、版本管理、在远程/容器里开发，甚至上 QQ、逛知乎、听网易云、炒股......
 
 ---
-
-## 下载、安装 VSCode
+## 4.  Visual Studio Code
+#### 4.1. 下载、安装 VSCode
 
 - 去[官网](https://code.visualstudio.com)
 - 挑个好位置安装，例如 `D:\Program Files\Microsoft VS Code`，最好别挤在 C 盘里，**更不要装在桌面**！
 
 ---
 
-## 配置 VSCode
+## 4.  Visual Studio Code
+#### 4.2. 配置 VSCode
 
 VSCode 有 $N+1$ 套配置：
 - 每个工作区/文件夹可以有自己的配置，以 `json` 文件的形式存放在 `.vscode` 目录下。（`.` 开头的文件/文件夹可能会被隐藏， `查看` - `显示` - `隐藏的项目`）
@@ -356,24 +389,24 @@ VSCode 有 $N+1$ 套配置：
 - 某一项设置如果在当前工作区/文件夹的配置中出现了，就采用这里指定的值，否则采用全局配置中的值。
 
 ---
-
-## 安装插件（扩展，extension）：
+## 4.  Visual Studio Code
+#### 4.3. 安装插件（扩展，extension）：
 
 - Code Runner：提供一个按钮，运行一个特定的指令，可以一键编译运行
 - C/C++：提供 C/C++ 代码高亮、静态分析等功能
 - vscode-icons：更好的文件图标显示（安装后记得 enable）
-- One Dark Pro 和 GitHub Theme：个人比较喜欢的颜色主题
+- One Dark Pro / GitHub Theme：个人比较喜欢的颜色主题
 - GlassIt-VSC：按 `Ctrl`+`Alt`+`z` 变透明，按 `Ctrl`+`Alt`+`c` 变回来
-- Office Viewer(Markdown Editor)：我用它打开 pdf 和图片
+- Office Viewer (Markdown Editor)：我用它打开 pdf 和图片
 - Chinese (Simplified) Language Pack for Visual Studio Code？
 
-**以上插件已经足够，不建议安装很多 C/C++ 相关的插件（例如 Clang Command Adapter、C/C++ Runner 等），否则配置起来很困难**
+> 以上插件已经足够，不建议安装很多 C/C++ 相关的插件（例如 Clang Command Adapter、C/C++ Runner 等），否则配置起来很困难
 
 个人不建议安装 VSCode 推荐的 C/C++ Extension Pack。
 
 ---
-
-## 全局配置
+## 4.  Visual Studio Code
+#### 4.4. 全局配置
 
 按 `Ctrl`+`,`，或者左下角的齿轮 - `Settings`
 
@@ -386,19 +419,21 @@ VSCode 有 $N+1$ 套配置：
 
 ---
 
-## 工作区配置
+## 4.  Visual Studio Code
+#### 4.5. 工作区配置
 
 1. 为这门课程创建文件夹，例如 `D:\courses\CS100`
 2. `File` - `Open Folder...`（快捷键是 `Ctrl`+`k`+`Ctrl`+`o`）打开 `CS100` 文件夹。
    
    - 以后每一次都要先打开 VSCode，再打开文件夹，再编辑文件；而不是直接右击文件 - 用 VSCode 打开。否则工作区的配置无法起效。
-3. 创建 `D:\courses\CS100\.vscode` 文件夹，创建文件 `.vscode\settings.json` 和 `.vscode\c_cpp_properties.json`，去[这里](https://www.luogu.com.cn/paste/scc7i5yq)复制这两个配置文件的内容。
-   - 链接是 https://www.luogu.com.cn/paste/scc7i5yq
+3. 创建 `D:\courses\CS100\.vscode` 文件夹，创建文件 `.vscode\settings.json` 和 `.vscode\c_cpp_properties.json`，去[这里](https://github.com/Heaticy/CS100-recitations-fall2025/blob/main/env_setup/vscode-config-files.md)复制这两个配置文件的内容。
+   - 链接是 https://github.com/Heaticy/CS100-recitations-fall2025/blob/main/env_setup/vscode-config-files.md
    - 注意阅读“注意事项”。
 
 ---
 
-## Code Runner 的配置解释
+## 4.  Visual Studio Code
+#### 4.6. Code Runner 的配置解释
 
 打开 `hello.c`，可以看到右上角有一个播放按钮，这个按钮来自于 Code Runner。
 
@@ -411,7 +446,8 @@ VSCode 有 $N+1$ 套配置：
 
 ---
 
-## Debugger
+## 4.  Visual Studio Code
+#### 4.7. Debugger
 
 打开 `hello.c`，点击 `运行` - `开始调试`（快捷键 `F5`），选 `C++ (GDB/LLDB)`，选 gcc。
 
@@ -423,32 +459,34 @@ VSCode 有 $N+1$ 套配置：
 
 ---
 
-## 配置 VSCode
+## 4.  Visual Studio Code
+#### 4.8. 配置 VSCode
 
 - 目前为止，以上配置已经足够，不要胡乱粘贴别人的配置文件。
 - 遇到任何问题请首选 [官网](https://code.visualstudio.com) 和 [StackOverflow](https://www.stackoverflow.com)，或者在 Piazza 提问，或单独找TA。
 
 ---
 
-### VSCode 的集成终端（Integrated terminal）
+## 4.  Visual Studio Code
+#### 4.9. VSCode 的集成终端（Integrated terminal）
 
 - `View` - `Terminal`（快捷键 `Ctrl`+`` ` ``）可以打开 VSCode 内置的终端，在 Windows 上它默认使用的是 PowerShell。
 - Code Runner 的 Run Code 功能也会打开这个集成终端，因为我们在全局设置了 Run In Terminal。
 
-### 格式化代码
+#### 格式化代码
 
 右键 - `Format Document`（快捷键 `Alt`+`Shift`+`f`）可以格式化整个文件。
 - 我们已经在全局设置了 Format On Type 和 Format On Save
 
 ---
 
-## 关于我的幻灯片
-
+## 关于 CS100 Slides
 用 Markdown 就能制作幻灯片？你需要 Marp for VSCode。
 
-- 本学期我的习题课的所有材料在 https://github.com/Heaticy/CS100-recitations-fall2025 ，但我可能不会上传 pdf 文件。
-- VSCode 安装 "Marp for VS Code" 插件，然后打开我的 `.md` 文件，它就会自动识别为幻灯片。
-  ![](img/marp.png)
+#### Chaofan Li
+- 本学期习题课的材料将在 [GitHub](https://github.com/Heaticy/CS100-recitations-fall2025) 上开源，但可能不会上传 pdf 文件。
+- VSCode 安装 "Marp for VS Code" 插件，然后打开我的 `.md` 文件，它就会自动识别为幻灯片。![ h:60](img/marp.png)
 - 预览和导出：![](img/marp_view_export.png)
-
-（某些效果更复杂的幻灯片不排除回归 $\LaTeX$ 的可能）
+#### Yunxiang He
+- 使用 Awesome Marp 制作更好看的 Slides！
+- 访问 ![SHTU-PPT-Template](https://github.com/HypoxanthineOvO/SHTU-PPT-Template) 获得我只做的 Slides 模板！

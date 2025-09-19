@@ -1,0 +1,20 @@
+/* @theme Research */
+
+@import 'am_template';
+
+:root {
+  --color-code-bg: #f0e8f6;
+  --color-coverbg: #a15fe8;
+  --color-few: #91a814;
+  --color-footer: #8c8c8c;
+  --color-main: #041d22;
+  --color-much: #a15fe8;
+  --color-navbar-bg: #b780f1;
+  --color-navbar-font: rgb(108, 95, 91);
+  --color-quote: rgba(170, 47, 228, 0.1);
+  --color-title: rgb(255, 255, 255);
+  --color-trans: #a15fe8;
+  --filter-b: brightness(30%) contrast(70%) grayscale(100%);
+  --filter-c: brightness(0%) contrast(60%) grayscale(80%);
+  --filter-e: brightness(0%) contrast(70%) grayscale(100%);
+}
